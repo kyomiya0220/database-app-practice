@@ -30,15 +30,16 @@ COACHTECH 教材 Tutorial 9-3「データベース操作ハンズオン演習」
 
 1.  リポジトリをクローンします。
 
-````bash
+```bash
     git clone [https://github.com/kyomiya0220/database-app-practice.git](https://github.com/kyomiya0220/database-app-practice.git)
     cd database-app-practice
-    ```
+```
+
 2.  依存パッケージをインストールします。
 
 ```bash
     composer install
-````
+```
 
 3.  環境設定ファイルを作成し、データベース等の接続情報を設定します。
 
