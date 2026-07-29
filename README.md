@@ -29,40 +29,36 @@ COACHTECH 教材 Tutorial 9-3「データベース操作ハンズオン演習」
 ### 2. セットアップ手順
 
 1.  リポジトリをクローンします。
-    ```bash
+
+````bash
     git clone [https://github.com/kyomiya0220/database-app-practice.git](https://github.com/kyomiya0220/database-app-practice.git)
     cd database-app-practice
     ```
 2.  依存パッケージをインストールします。
 
-````bash
+```bash
     composer install
-```
+````
 
 3.  環境設定ファイルを作成し、データベース等の接続情報を設定します。
 
 ```bash
-cp .env.example .env
-php artisan key:generate
+    cp .env.example .env
+    php artisan key:generate
 ```
 
 4. データベースのマイグレーション（テーブル作成）を実行します。
 
 ```Bash
-php artisan migrate
+    php artisan migrate
 ```
+
 ### 3. アプリケーションの起動
 
 1. ローカルサーバーを起動します。
 
 ```Bash
-php artisan serve
+    php artisan serve
 ```
 
 2. ブラウザで http://127.0.0.1:8000 にアクセスし、動作を確認してください。
-
-````
-
-```
-
-```
