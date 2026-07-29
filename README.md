@@ -22,7 +22,7 @@ COACHTECH 教材 Tutorial 9-3「データベース操作ハンズオン演習」
 
 ### 1. 事前準備
 
-- PHP (バージョンxx以上)
+- PHP (バージョン8.x以上)
 - Composer
 - MySQL などのデータベース環境
 
@@ -35,26 +35,34 @@ COACHTECH 教材 Tutorial 9-3「データベース操作ハンズオン演習」
     ```
 2.  依存パッケージをインストールします。
 
-        Bash
-
+````bash
     composer install
+```
 
 3.  環境設定ファイルを作成し、データベース等の接続情報を設定します。
 
-Bash
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 
 4. データベースのマイグレーション（テーブル作成）を実行します。
 
-Bash
+```Bash
 php artisan migrate
-
+```
 ### 3. アプリケーションの起動
 
 1. ローカルサーバーを起動します。
 
-   Bash
-   php artisan serve
+```Bash
+php artisan serve
+```
 
 2. ブラウザで http://127.0.0.1:8000 にアクセスし、動作を確認してください。
+
+````
+
+```
+
+```
